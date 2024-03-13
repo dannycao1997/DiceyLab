@@ -6,19 +6,20 @@ import java.util.Random;
 // rolling a 1 die = singular
 // rolling a 2 dice = plural
 
-public class Dice {
+public class Dice { // instance fields
     private final int numDice;
     private final Random random;
 
-    public Dice(int numDice) {
+    public Dice(int numDice) { // constructor
         this.numDice = numDice;
-        this.random = new Random();
+        this.random = new Random(); // random number method
     }
+
     public int tossAndSum(){
         int sum = 0;
 
         for ( int i = 0; i < numDice; i++) { // rolling 2 dice
-            sum += random.nextInt(6)+ 1; //
+            sum += random.nextInt(6)+ 1; // highest dice number/upperbound is 6;
         }
         return sum;
     }
