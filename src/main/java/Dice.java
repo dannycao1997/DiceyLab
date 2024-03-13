@@ -1,6 +1,7 @@
 import java.util.Random;
 
 
+
 // Instructions : Create a Dice class that acts like a set of N random-tossed dies.
 // 6 sides on each die
 // rolling a 1 die = singular
@@ -15,13 +16,13 @@ public class Dice { // instance fields
         this.random = new Random(); // random number method
     }
 
-    public int tossAndSum(){
+    public int tossAndSum() {
         int sum = 0;
 
-        for ( int i = 0; i < numDice; i++) { // rolling 2 dice
-            sum += random.nextInt(6)+ 1; // highest dice number/upperbound is 6;
+        for (int i = 0; i < numDice; i++) { // rolling 2 dice
+            sum += random.nextInt(6) + 1; // highest dice number/upperbound is 6;
         }
         return sum;
     }
-
 }
+

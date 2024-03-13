@@ -1,23 +1,13 @@
 import java.util.HashMap;
-import java.util.Map;
+
 //Instructions : Create a tracking class Bins that can be used to track these results.
+
 public class Bins {
-    private final HashMap<Integer, Integer> results;
+    public static void main(String[] args) {
 
-    public Bins(int x, int y) {
-        results = new HashMap<>();
-        for(int i = x; i <= y; i++){
-            results.put(i,0);
-        }
-    }
+        HashMap<Integer, Integer> bins = new HashMap<Integer, Integer>();
 
-    public void incrementBin(int bin) {
-    results.put(bin, results.get(bin) + 1 );
-    }
+        bins.put(2, 12);
 
-    public int getBin(int bin) {
-        return results.get(bin);
     }
 }
-
-
