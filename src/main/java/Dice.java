@@ -7,7 +7,7 @@ import java.util.Random;
 // rolling a 2 dice = plural
 
 public class Dice { // instance fields
-    private final int numDice;
+    private final int numDice; // number of dice rolled
     private final Random random;
 
     public Dice(int numDice) { // constructor
