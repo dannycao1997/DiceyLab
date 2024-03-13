@@ -23,4 +23,5 @@ public class Dice { // instance fields
         }
         return sum;
     }
+
 }

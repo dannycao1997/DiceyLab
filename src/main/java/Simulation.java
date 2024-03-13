@@ -10,14 +10,25 @@ public class Simulation {
         this.results = new Bins(numberOfDies, numberOfDies * 6);
         this.dice = new Dice(numberOfDies);
     }
-    public void 
-}
-    public class main {
-        public static void main(String[] args) {
-            Simulation sim = new Simulation(2, 10000);
-            sim.runSimulation;
-            sim.printResults;
+
+
+    public void runSimulation(){
+        for (int i = 0; i < numberOfTosses; i++){
+            int tossResult = dice.tossAndSum();
+            results.incrementBin(tossResult);
         }
     }
+
+
+
+    public void printResults(){
+        System.out.println("BRUHHHH");
+        for( int i = numberOfDies; i <= numberOfDies * 6; i++){
+
+
+
+
+    }
+}
 
 

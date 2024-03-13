@@ -10,9 +10,11 @@ public class Bins {
             results.put(i,0);
         }
     }
+
     public void incrementBin(int bin) {
     results.put(bin, results.get(bin) + 1 );
     }
+
     public int getBin(int bin) {
         return results.get(bin);
     }
