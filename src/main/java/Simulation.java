@@ -26,7 +26,7 @@ public class Simulation { //instance fields
         sb.append("Simulation of ").append(numberOfTosses).append(" tosses with ").append(numberOfDies).append(" dice.\n");
         sb.append("**\n\n");
         for (int i = numberOfDies; i <= 6 * numberOfDies; i++) { // rolling 1 to 6
-            sb.append(String.format("%2d : %8d: %.2f ", i, results.getBin(i), (double) results.getBin(i) / numberOfTosses * 100));
+            sb.append(String.format("%2d : %8d: %.2f ", i, results.getBin(i), (double) results.getBin(i) / numberOfTosses)); // percentage
             for (int j = 0; j < (double) results.getBin(i) / numberOfTosses * 100; j++) {
                 sb.append("*");
             }
