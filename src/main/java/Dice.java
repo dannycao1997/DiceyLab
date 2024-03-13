@@ -5,6 +5,7 @@ import java.util.Random;
 // 6 sides on each die
 // rolling a 1 die = singular
 // rolling a 2 dice = plural
+
 public class Dice {
     private final int numDice;
     private final Random random;
