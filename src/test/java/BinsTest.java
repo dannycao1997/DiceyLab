@@ -9,5 +9,4 @@ public class BinsTest {
         bins.incrementBin(12);
         Assert.assertEquals(1, bins.getBin(12).intValue());
     }
-
 }
