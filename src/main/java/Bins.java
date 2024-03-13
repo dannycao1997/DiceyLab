@@ -1,6 +1,7 @@
 import java.util.HashMap;
 
 //Instructions : Create a tracking class Bins that can be used to track these results.
+
 public class Bins {
     private HashMap<Integer, Integer> bins = new HashMap<>();
 
@@ -22,7 +23,6 @@ public class Bins {
     public static void main(String[] args){
         Bins results = new Bins(2, 12);
         results.incrementBin(10);
-        Integer numberOfTens = results.getBin(10);
     }
 }
 
