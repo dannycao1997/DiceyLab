@@ -6,9 +6,10 @@ public class Bins {
     private HashMap<Integer, Integer> bins = new HashMap<>();
 
 
-    public Bins(int startBin, int endBin) {
+    //CONSTRUCTOR
+    public Bins(int startBin, int endBin) { // start = 2 and end = 12
         bins = new HashMap<>();
-        for (int i = startBin; i <= endBin; i++) {
+        for (int i = startBin; i <= endBin; i++) { // 2 to 12
             bins.put(i, 0);
         }
     }

@@ -5,7 +5,7 @@ import org.junit.Assert;
 public class DiceTest {
 
     @Test
-    public void testTossAndSum2() { // testing rolling 2 dice
+    public void testTossAndSum2() { // testing rolling 2 dice // parameters
         Dice dice = new Dice(2);
         int toss = dice.tossAndSum();
         Assert.assertTrue(toss >= 2 && toss <= 12);

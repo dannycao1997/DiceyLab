@@ -1,7 +1,6 @@
 import java.util.Random;
 
 
-
 // Instructions : Create a Dice class that acts like a set of N random-tossed dies.
 // 6 sides on each die
 // rolling a 1 die = singular
@@ -11,7 +10,7 @@ public class Dice { // instance fields
     private final int numDice; // number of dice rolled
     private final Random random;
 
-    public Dice(int numDice) { // constructor
+    public Dice(int numDice) { // CONSTRUCTOR
         this.numDice = numDice;
         this.random = new Random(); // random number method
     }

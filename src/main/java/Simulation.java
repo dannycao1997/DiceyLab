@@ -5,13 +5,11 @@ public class Simulation { //instance fields
     public int numberOfDies; // numbers of dies
     public int numberOfTosses; // number of  tosses
     public Bins results; // results of bins
-
     public Simulation(int numberOfDies, int numberOfTosses) { //CONSTRUCTOR
         this.numberOfDies = numberOfDies;
         this.numberOfTosses = numberOfTosses;
         this.results = new Bins(2 * numberOfDies, 6 * numberOfDies);
     }
-
     public void runSimulation() {
         Dice dice = new Dice(numberOfDies);
         for (int i = 0; i < numberOfTosses; i++) { // LOOP
@@ -19,7 +17,6 @@ public class Simulation { //instance fields
             results.incrementBin(sum);
         }
     }
-
     public String printResults() {
         StringBuilder sb = new StringBuilder(); // string builder method
         sb.append("Simulation of ").append(numberOfTosses).append(" tosses with ").append(numberOfDies).append(" dice.\n");
@@ -31,7 +28,6 @@ public class Simulation { //instance fields
             sb.append("\n");
         }
         return sb.toString();  // convert numbers back to a string
-
     }
     public static void main(String[] args) {
         Simulation sim = new Simulation(2, 1000000); // ex: rolling 2 dice => 1 million times lol
